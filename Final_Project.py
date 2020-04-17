@@ -1,4 +1,4 @@
-#The goal below is to build a web app that locates the nearest MBTA stop from a given input 
+#The goal below is to build a web app that locates the nearest MBTA stop from a given location input 
 
 #-----------------------Part 1----------------------------------------------------------------
 import urllib.request
@@ -18,5 +18,5 @@ print(response_data["results"][0]["locations"][0]['postalCode']) #call specific 
 
 #print(load(latLng))
 
-for items in response_data['locations']:
+for items in response_data['results']:
     print(items['latLng'])
